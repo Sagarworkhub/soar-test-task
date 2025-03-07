@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router';
 export const Header = () => {
   return (
-    <header className='flex justify-between items-center px-10 py-5'>
+    <header className='flex sm:flex-row flex-col  sm:justify-between items-center px-10 py-5'>
       <h1 className='text-[28px] font-semibold text-[#343C6A]'>Overview</h1>
-      <div className='flex items-center gap-[30px]'>
+      <div className='flex sm:flex-row flex-col sm:items-center gap-[30px]'>
         <input
           type='text'
           placeholder='Search for something'
+          className='sm:block hidden bg-[#F5F7FA ]'
         />
         <NavLink
-          className='size-[50px] flex justify-center items-center rounded-full bg-[#F5F7FA]'
+          className='size-[50px] hidden sm:flex justify-center items-center rounded-full bg-[#F5F7FA]'
           to='/setting'
         >
           <img
@@ -18,7 +19,7 @@ export const Header = () => {
             aria-label='setting'
           />
         </NavLink>
-        <button className='size-[50px] flex justify-center items-center rounded-full bg-[#F5F7FA]'>
+        <button className='size-[50px] hidden sm:flex justify-center items-center rounded-full bg-[#F5F7FA]'>
           <img
             src='/public/icons/notification.svg'
             alt='notification'
@@ -33,6 +34,11 @@ export const Header = () => {
           />
         </div>
       </div>
+      <input
+        type='text'
+        placeholder='Search for something'
+        className='sm:hidden block bg-[#F5F7FA]px-2 py-1'
+      />
     </header>
   );
 };
