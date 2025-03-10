@@ -97,7 +97,9 @@ export const SettingForm = () => {
         >
           <div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>Your Name</label>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
+                Your Name
+              </label>
               <input
                 {...register('name')}
                 placeholder='Enter your name'
@@ -108,7 +110,9 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>Email</label>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
+                Email
+              </label>
               <input
                 {...register('email')}
                 placeholder='Enter your email'
@@ -120,7 +124,7 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>
+              <label className='pb-3 text-base font-inter text-[#232323]'>
                 Date of Birth
               </label>
               <input
@@ -134,7 +138,7 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
                 Permanent Address
               </label>
               <input
@@ -149,7 +153,7 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
                 Postal Code
               </label>
               <input
@@ -165,7 +169,9 @@ export const SettingForm = () => {
 
           <div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>Username</label>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
+                Username
+              </label>
               <input
                 {...register('userName')}
                 placeholder='Enter username'
@@ -176,7 +182,9 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>Password</label>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
+                Password
+              </label>
               <input
                 {...register('password')}
                 placeholder='Enter password'
@@ -188,7 +196,7 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
                 Present Address
               </label>
               <input
@@ -201,7 +209,9 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>City</label>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
+                City
+              </label>
               <input
                 {...register('city')}
                 placeholder='Enter city name'
@@ -212,7 +222,9 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 text-base text-[#232323]'>Country</label>
+              <label className='pb-3 font-inter text-base text-[#232323]'>
+                Country
+              </label>
               <input
                 {...register('country')}
                 placeholder='Enter country name'
@@ -224,7 +236,7 @@ export const SettingForm = () => {
             </div>
           </div>
           <div className='mt-5 flex w-full justify-center sm:justify-end'>
-            <button className='rounded-3xl bg-[#232323] px-16 py-3 text-white'>
+            <button className='rounded-3xl font-inter bg-[#232323] px-16 py-3 text-white'>
               Save
             </button>
           </div>

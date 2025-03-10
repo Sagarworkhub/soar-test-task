@@ -1,10 +1,12 @@
 import { NavLink, useLocation } from 'react-router';
 import { getMenuList } from '../utils/getMenuList';
-import { useState } from 'react';
 
-export const Sidebar = () => {
+interface SidebarProps {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
 
   // Get the full current path
   const currentPath = location.pathname;
@@ -13,16 +15,20 @@ export const Sidebar = () => {
 
   return (
     <>
-      <button
-        className='sm:hidden fixed top-5 left-5 z-50 p-2 bg-white shadow-md rounded-full'
-        onClick={() => setIsOpen(true)}
+      <aside
+        className={`fixed top-0 left-0 min-h-screen h-full w-[280px] sm:w-[250px] border-r border-[#E6EFF5] bg-white transition-all transform duration-500 ease-in-out z-50
+  ${isOpen ? 'translate-x-0' : '-translate-x-full'} sm:translate-x-0 sm:static`}
       >
-        <img src='/icons/hamburger-icon.svg' />
-      </button>
-      <aside className='w-[250px] border-r border-[#E6EFF5] h-screen'>
+        <button
+          className='sm:hidden absolute top-7 right-1 p-2 rounded-full'
+          onClick={() => setIsOpen(false)}
+        >
+          <img src='/icons/Close.svg' alt='Close Sidebar' className='size-7' />
+        </button>
+
         <div className='flex gap-2.5 pt-[31px] pb-[34px] justify-center'>
           <img
-            src='/public/icons/logo.svg'
+            src='/icons/logo.svg'
             alt='logo'
             aria-label='logo'
             className='size-[35px]'

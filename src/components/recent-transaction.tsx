@@ -42,14 +42,14 @@ export const RecentTransaction = () => {
                   <img src={item.img} className='absolute left-4 top-5' />
                 </div>
                 <div className='flex grow flex-col'>
-                  <p className='text-base font-medium text-[#232323]'>
+                  <p className='text-base font-inter font-medium text-[#232323]'>
                     {item.title}
                   </p>
-                  <p className='text-[15px] font-normal text-[#718EBF]'>
+                  <p className='text-[15px] font-inter font-normal text-[#718EBF]'>
                     {item.date}
                   </p>
                 </div>
-                <p className={`text-sm font-medium ${amountColor}`}>
+                <p className={`text-sm font-inter font-medium ${amountColor}`}>
                   {item.amount}
                 </p>
               </div>

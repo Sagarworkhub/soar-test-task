@@ -19,8 +19,8 @@ export const SettingPage = () => {
               key={value}
               className={`rounded-none px-[74px] font-medium ${
                 activeTab === value
-                  ? 'border-b-2 border-b-[#232323] text-lg text-[#232323]'
-                  : 'text-base text-[#718EBF]'
+                  ? 'border-b-2 border-b-[#232323] font-inter text-lg text-[#232323]'
+                  : 'text-base font-inter text-[#718EBF]'
               }`}
               onClick={() => {
                 setActiveTab(value);

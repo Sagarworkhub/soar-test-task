@@ -53,10 +53,12 @@ export const QuickTransfer = () => {
               alt={item.name}
               className='mx-auto size-10 rounded-full sm:size-[70px]'
             />
-            <h2 className='mt-2 text-xs font-semibold text-[#232323] hover:font-bold sm:text-lg'>
+            <h2 className='mt-2 font-inter text-xs font-semibold text-[#232323] hover:font-bold sm:text-lg'>
               {item.name}
             </h2>
-            <p className='text-[#718EBF] hover:font-bold'>{item.position}</p>
+            <p className='text-[#718EBF] font-inter hover:font-bold'>
+              {item.position}
+            </p>
           </div>
         ))}
         <button
@@ -67,12 +69,14 @@ export const QuickTransfer = () => {
         </button>
       </div>
       <div className='flex items-center gap-2 pt-7 sm:gap-6'>
-        <p className='text-base font-normal text-[#718EBF]'>Write Amount</p>
+        <p className='text-base font-normal font-inter text-[#718EBF]'>
+          Write Amount
+        </p>
         <div className='flex gap-9 rounded-full bg-[#EDF1F7] sm:gap-14'>
-          <p className='py-[15px] pl-[30px] text-base font-normal text-[#718EBF]'>
+          <p className='py-[15px] font-inter pl-[30px] text-base font-normal text-[#718EBF]'>
             525.50
           </p>
-          <button className='flex items-center gap-1 rounded-full bg-[#232323] px-6 text-xs font-medium text-white sm:gap-2 sm:text-base'>
+          <button className='flex items-center gap-1 rounded-full bg-[#232323] px-6 text-xs font-medium text-white sm:gap-2 sm:text-base font-inter'>
             Send
             <img src='/icons/send-icon.svg' className='size-4 sm:size-6' />
           </button>
