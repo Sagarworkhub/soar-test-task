@@ -76,9 +76,12 @@ export const QuickTransfer = () => {
           <p className='py-[15px] font-inter pl-[30px] text-base font-normal text-[#718EBF]'>
             525.50
           </p>
-          <button className='flex items-center gap-1 rounded-full bg-[#232323] px-6 text-xs font-medium text-white sm:gap-2 sm:text-base font-inter'>
+          <button className='flex items-center gap-1 rounded-full bg-[#232323] px-6 text-xs hover:font-bold font-medium text-white sm:gap-2 sm:text-base font-inter'>
             Send
-            <img src='/icons/send-icon.svg' className='size-4 sm:size-6' />
+            <img
+              src='/icons/send-icon.svg'
+              className='size-4 hover:size-8 sm:size-6'
+            />
           </button>
         </div>
       </div>

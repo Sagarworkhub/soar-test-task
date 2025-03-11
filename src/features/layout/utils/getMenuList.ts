@@ -12,7 +12,7 @@ export function getMenuList(pathname: string): Array<Menu> {
     {
       label: 'Dashboard',
       href: '/',
-      icon: '/public/icons/dashboard.svg',
+      icon: '/icons/dashboard.svg',
       activeIcon: '/public/icons/dashboard-active.svg',
       active: pathname === '/',
       disabled: false,
@@ -20,7 +20,7 @@ export function getMenuList(pathname: string): Array<Menu> {
     {
       label: 'Transactions',
       href: '/transactions',
-      icon: '/public/icons/transaction.svg',
+      icon: '/icons/transaction.svg',
       activeIcon: '/public/icons/dashboard-active.svg',
       active: pathname === '/transactions',
       disabled: true,
@@ -29,14 +29,14 @@ export function getMenuList(pathname: string): Array<Menu> {
       label: 'Accounts',
       href: '/accounts',
       icon: '/public/icons/accounts.svg',
-      activeIcon: '/public/icons/dashboard-active.svg',
+      activeIcon: '/icons/dashboard-active.svg',
       active: pathname === '/accounts',
       disabled: true,
     },
     {
       label: 'Investments',
       href: '/investments',
-      icon: '/public/icons/investments.svg',
+      icon: '/icons/investments.svg',
       activeIcon: '/public/icons/dashboard-active.svg',
       active: pathname === '/Investments',
       disabled: true,
@@ -44,7 +44,7 @@ export function getMenuList(pathname: string): Array<Menu> {
     {
       label: 'Credit Cards',
       href: '/Credit-cards',
-      icon: '/public/icons/credit-cards.svg',
+      icon: '/icons/credit-cards.svg',
       activeIcon: '/public/icons/dashboard-active.svg',
       active: pathname === '/Credit-cards',
       disabled: true,
@@ -52,7 +52,7 @@ export function getMenuList(pathname: string): Array<Menu> {
     {
       label: 'Loans',
       href: '/loans',
-      icon: '/public/icons/loans.svg',
+      icon: '/icons/loans.svg',
       activeIcon: '/public/icons/dashboard-active.svg',
       active: pathname === '/loans',
       disabled: true,
@@ -60,7 +60,7 @@ export function getMenuList(pathname: string): Array<Menu> {
     {
       label: 'Services',
       href: '/services',
-      icon: '/public/icons/services.svg',
+      icon: '/icons/services.svg',
       activeIcon: '/public/icons/dashboard-active.svg',
       active: pathname === '/services',
       disabled: true,
@@ -68,7 +68,7 @@ export function getMenuList(pathname: string): Array<Menu> {
     {
       label: 'My Privileges',
       href: '/my-privileges',
-      icon: '/public/icons/my-privileges.svg',
+      icon: '/icons/my-privileges.svg',
       activeIcon: '/public/icons/dashboard-active.svg',
       active: pathname === '/my-privileges',
       disabled: true,
@@ -76,7 +76,7 @@ export function getMenuList(pathname: string): Array<Menu> {
     {
       label: 'Setting',
       href: '/setting',
-      icon: '/public/icons/setting.svg',
+      icon: '/icons/setting.svg',
       activeIcon: '/public/icons/setting-active.svg',
       active: pathname === '/setting',
       disabled: false,

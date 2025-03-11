@@ -81,12 +81,18 @@ export const SettingForm = () => {
     <div className='flex flex-col items-center gap-8 px-6 py-10 sm:flex-row sm:items-start sm:px-14'>
       <div className='relative'>
         <div className='size-[90px]'>
-          <img src='/setting-img.svg' className='rounded-full object-contain' />
+          <img
+            src='/images/user-img.svg'
+            className='size-full rounded-full object-contain'
+          />
         </div>
 
         <div className='absolute -bottom-1 -right-2'>
           <div className='size-8'>
-            <img src='/pencil-icon.svg' className='rounded-full bg-black p-2' />
+            <img
+              src='/icons/pencil-icon.svg'
+              className='rounded-full bg-black p-2'
+            />
           </div>
         </div>
       </div>
@@ -96,41 +102,41 @@ export const SettingForm = () => {
           className='grid grid-cols-1 gap-7 sm:grid-cols-2'
         >
           <div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex pb-[22px] flex-col'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 Your Name
               </label>
               <input
                 {...register('name')}
                 placeholder='Enter your name'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border p-3 border-[#DFEAF2]'
               />
               {errors.name && (
                 <p className='text-red-500'>{errors.name.message}</p>
               )}
             </div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex  flex-col'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 Email
               </label>
               <input
                 {...register('email')}
                 placeholder='Enter your email'
                 type='email'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
               />
               {errors.email && (
                 <p className='text-red-500'>{errors.email.message}</p>
               )}
             </div>
-            <div className='flex flex-col'>
-              <label className='pb-3 text-base font-inter text-[#232323]'>
+            <div className='flex py-[22px] flex-col'>
+              <label className='pb-2 text-base font-inter text-[#232323]'>
                 Date of Birth
               </label>
               <input
                 {...register('dateOfBirth')}
                 placeholder='Enter date of birth'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
                 type='date'
               />
               {errors.dateOfBirth && (
@@ -138,13 +144,13 @@ export const SettingForm = () => {
               )}
             </div>
             <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 Permanent Address
               </label>
               <input
                 {...register('permanentAddress')}
                 placeholder='Enter permanent address'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
               />
               {errors.permanentAddress && (
                 <p className='text-red-500'>
@@ -152,14 +158,14 @@ export const SettingForm = () => {
                 </p>
               )}
             </div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex py-[22px] flex-col'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 Postal Code
               </label>
               <input
                 {...register('postalCode')}
                 placeholder='Enter postal code'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
               />
               {errors.postalCode && (
                 <p className='text-red-500'>{errors.postalCode.message}</p>
@@ -168,75 +174,75 @@ export const SettingForm = () => {
           </div>
 
           <div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex pb-[22px] flex-col'>
+              <label className='pb-2  font-inter text-base text-[#232323]'>
                 Username
               </label>
               <input
                 {...register('userName')}
                 placeholder='Enter username'
-                className='rounded-xl border p-3'
+                className='rounded-2xl  border-[#DFEAF2] border p-3'
               />
               {errors.userName && (
                 <p className='text-red-500'>{errors.userName.message}</p>
               )}
             </div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex pb-[22px] flex-col'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 Password
               </label>
               <input
                 {...register('password')}
                 placeholder='Enter password'
                 type='password'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
               />
               {errors.password && (
                 <p className='text-red-500'>{errors.password.message}</p>
               )}
             </div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex pb-[22px] flex-col'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 Present Address
               </label>
               <input
                 {...register('presentAddress')}
                 placeholder='Enter present address'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
               />
               {errors.presentAddress && (
                 <p className='text-red-500'>{errors.presentAddress.message}</p>
               )}
             </div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex pb-[22px] flex-col'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 City
               </label>
               <input
                 {...register('city')}
                 placeholder='Enter city name'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
               />
               {errors.city && (
                 <p className='text-red-500'>{errors.city.message}</p>
               )}
             </div>
-            <div className='flex flex-col'>
-              <label className='pb-3 font-inter text-base text-[#232323]'>
+            <div className='flex  flex-col'>
+              <label className='pb-2 font-inter text-base text-[#232323]'>
                 Country
               </label>
               <input
                 {...register('country')}
                 placeholder='Enter country name'
-                className='rounded-xl border p-3'
+                className='rounded-2xl border-[#DFEAF2] border p-3'
               />
               {errors.country && (
                 <p className='text-red-500'>{errors.country.message}</p>
               )}
             </div>
           </div>
-          <div className='mt-5 flex w-full justify-center sm:justify-end'>
-            <button className='rounded-3xl font-inter bg-[#232323] px-16 py-3 text-white'>
+          <div className='mt-5 col-span-2 flex w-full justify-center sm:justify-end'>
+            <button className='rounded-3xl font-inter bg-[#232323] px-16 py-3 text-white hover:bg-red-700 hover:font-bold '>
               Save
             </button>
           </div>

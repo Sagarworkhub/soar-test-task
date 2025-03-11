@@ -15,7 +15,7 @@ export const Dashboard = () => {
             <h1 className='font-semibold font-inter text-[#343C6A] text-[22px]'>
               My Cards
             </h1>
-            <p className='font-semibold font-inter text-[17px] text-[#343C6A] cursor-pointer'>
+            <p className='font-semibold hover:font-extrabold font-inter text-[17px] text-[#343C6A] cursor-pointer'>
               See All
             </p>
           </div>
