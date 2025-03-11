@@ -1,12 +1,12 @@
 export const CustomCard1 = () => {
   return (
-    <div className='w-full h-min max-w-sm rounded-3xl bg-gradient-to-r from-[#5B5A6F] to-black'>
+    <div className='w-full h-min min-w-sm rounded-3xl bg-gradient-to-r from-[#5B5A6F] to-black'>
       <div className='flex items-center justify-between p-6'>
         <div className='flex flex-col'>
           <p className='text-xs font-normal font-inter text-white'>Balance</p>
           <p className='text-xl font-semibold text-white'>$5,756</p>
         </div>
-        <img src='/public/icons/chip_icon.svg' alt='chip icon' />
+        <img src='/icons/chip_icon.svg' alt='chip icon' />
       </div>
       <div className='flex items-center justify-between px-6 pb-6 pt-3'>
         <div>
@@ -17,12 +17,12 @@ export const CustomCard1 = () => {
             Eddy Cusuma
           </p>
         </div>
-        <div className='pr-28'>
+        <div className='pr-16'>
           <p className='text-xs font-normal font-inter text-white'>
             VALID THRU
           </p>
           <p className='text-[15px] font-semibold font-inter text-white'>
-            12/22c
+            12/22
           </p>
         </div>
       </div>
